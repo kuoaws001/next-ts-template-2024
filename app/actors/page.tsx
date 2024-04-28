@@ -7,8 +7,8 @@ const page = async () => {
     const actors: Actor[] = res.data;
 
     return (
-        <div>
-            <ul>
+        <div className="container">
+            <ul className="mt-4">
                 {actors.map(actor => (
                     <li key={actor.actor_id}>{actor.first_name}</li>
                 ))}
